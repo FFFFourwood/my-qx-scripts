@@ -13,7 +13,7 @@
         "name": "hao4k签到",
         "task": [
             {
-                "config": "0 0 1 * * https:\/\/raw.githubusercontent.com\/crossutility\/Quantumult-X\/master\/sample-task.js, img-url=https:\/\/raw.githubusercontent.com\/crossutility\/Quantumult-X\/master\/quantumult-x.png, tag=Sample, enabled=true",
+                "config": "0 0 1 * * https:\/\/raw.githubusercontent.com\/FFFFourwood\/my-qx-scripts\/main\/scripts\/hao4k_signin.js, img-url=https:\/\/raw.githubusercontent.com\/crossutility\/Quantumult-X\/master\/quantumult-x.png, tag=Sample, enabled=true",
                 "addons": ""
             }
         ],

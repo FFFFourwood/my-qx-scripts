@@ -5,7 +5,7 @@
  */
 
 const paramUrl = '?id=k_misign:sign&operation=qiandao&formhash=df87be5c&format=empty'//此处填写签到按钮的链接 从？开始
-const hostUrl = 'https://www.hao4k.cn/plugin.php' 
+const hostUrl = 'https://www.hao4k.cn/plugin.php'
 const url = hostUrl + paramUrl
 const method = "GET";
 //填写cookie信息
@@ -20,26 +20,22 @@ const myRequest = {
     headers: headers, // Optional.
 };
 
-function toSignIn() {
-    $task.fetch(myRequest).then(response => {
-        // response.statusCode, response.headers, response.body
-        console.log(response.body);
-        let tempRes = response.body
-        if(tempRes.indexOf('[CDATA[]]') != -1){
-            $notify("hao4k签到提醒", "签到成功", response.body); // Success!
-            toSignIn()
-            $done();
-        } else if (tempRes.indexOf('今日已签') != -1){
-            $notify("hao4k签到提醒", "今日已签", response.body); // Success!
-            $done();
-        } else {
-            $notify("hao4k签到失败", "请检查cookie以及参数", response.body); // Success!
-            $done();
-        }
-    }, reason => {
-        // reason.error
-        $notify("hao4k签到提醒", "请求失败", reason.error); // Error!
+$task.fetch(myRequest).then(response => {
+    // response.statusCode, response.headers, response.body
+    console.log(response.body);
+    let tempRes = response.body
+    if (tempRes.indexOf('[CDATA[]]') != -1) {
+        $notify("hao4k签到提醒", "签到成功", response.body); // Success!
         $done();
-    });
-}
-toSignIn()
+    } else if (tempRes.indexOf('今日已签') != -1) {
+        $notify("hao4k签到提醒", "今日已签", response.body); // Success!
+        $done();
+    } else {
+        $notify("hao4k签到失败", "请检查cookie以及参数", response.body); // Success!
+        $done();
+    }
+}, reason => {
+    // reason.error
+    $notify("hao4k签到提醒", "请求失败", reason.error); // Error!
+    $done();
+});

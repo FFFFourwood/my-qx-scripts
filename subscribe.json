@@ -6,7 +6,7 @@
             "addons": "https:\/\/raw.githubusercontent.com\/crossutility\/Quantumult-X\/master\/sample-import-rewrite.txt"
         },
         {
-            "config": "0 0 1 * * https:\/\/raw.githubusercontent.com\/FFFFourwood\/my-qx-scripts\/main\/scripts\/hao4k_signin.js, img-url=https:\/\/raw.githubusercontent.com\/crossutility\/Quantumult-X\/master\/quantumult-x.png, tag=hao4K自动签到, enabled=true",
+            "config": "0 7 * * * https:\/\/raw.githubusercontent.com\/FFFFourwood\/my-qx-scripts\/main\/scripts\/hao4k_signin.js, img-url=https:\/\/raw.githubusercontent.com\/crossutility\/Quantumult-X\/master\/quantumult-x.png, tag=hao4K自动签到, enabled=true",
             "addons": ""
         }
     ],

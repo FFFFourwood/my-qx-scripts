@@ -26,14 +26,12 @@ $task.fetch(myRequest).then(response => {
     let tempRes = response.body
     if (tempRes.indexOf('[CDATA[]]') != -1) {
         $notify("hao4k签到提醒", "签到成功", response.body); // Success!
-        $done();
     } else if (tempRes.indexOf('今日已签') != -1) {
         $notify("hao4k签到提醒", "今日已签", response.body); // Success!
-        $done();
     } else {
-        $notify("hao4k签到失败", "请检查cookie以及参数", response.body); // Success!
-        $done();
+        $notify("hao4k签到失败", "请检查cookie以及参数", response.body); // Success! 
     }
+    $done();
 }, reason => {
     // reason.error
     $notify("hao4k签到提醒", "请求失败", reason.error); // Error!

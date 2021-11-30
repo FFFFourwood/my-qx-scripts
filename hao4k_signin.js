@@ -27,6 +27,7 @@ function toSignIn() {
         let tempRes = response.body
         if(tempRes.indexOf('[CDATA[]]') != -1){
             $notify("hao4k签到提醒", "签到成功", response.body); // Success!
+            toSignIn()
             $done();
         } else if (tempRes.indexOf('今日已签') != -1){
             $notify("hao4k签到提醒", "今日已签", response.body); // Success!

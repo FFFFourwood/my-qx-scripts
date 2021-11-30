@@ -1,22 +1,14 @@
-[
-    {
-        "name": "Sample",
-        "task": [
-            {
-                "config": "0 0 * * * https:\/\/raw.githubusercontent.com\/crossutility\/Quantumult-X\/master\/sample-task.js, img-url=https:\/\/raw.githubusercontent.com\/crossutility\/Quantumult-X\/master\/quantumult-x.png, tag=Sample, enabled=true",
-                "addons": "https:\/\/raw.githubusercontent.com\/crossutility\/Quantumult-X\/master\/sample-import-rewrite.txt"
-            }
-        ],
-        "description": "This is a sample."
-    },
-    {
-        "name": "hao4k签到",
-        "task": [
-            {
-                "config": "0 0 1 * * https:\/\/raw.githubusercontent.com\/FFFFourwood\/my-qx-scripts\/main\/scripts\/hao4k_signin.js, img-url=https:\/\/raw.githubusercontent.com\/crossutility\/Quantumult-X\/master\/quantumult-x.png, tag=Sample, enabled=true",
-                "addons": ""
-            }
-        ],
-        "description": "hao4k自动签到脚本."
-    }
-]
+{
+    "name": "FFFFourwood的QX脚本库",
+    "task": [
+        {
+            "config": "0 0 * * * https:\/\/raw.githubusercontent.com\/crossutility\/Quantumult-X\/master\/sample-task.js, img-url=https:\/\/raw.githubusercontent.com\/crossutility\/Quantumult-X\/master\/quantumult-x.png, tag=Sample, enabled=true",
+            "addons": "https:\/\/raw.githubusercontent.com\/crossutility\/Quantumult-X\/master\/sample-import-rewrite.txt"
+        },
+        {
+            "config": "0 0 1 * * https:\/\/raw.githubusercontent.com\/FFFFourwood\/my-qx-scripts\/main\/scripts\/hao4k_signin.js, img-url=https:\/\/raw.githubusercontent.com\/crossutility\/Quantumult-X\/master\/quantumult-x.png, tag=hao4K自动签到, enabled=true",
+            "addons": ""
+        }
+    ],
+    "description": "FFFFourwood的QX脚本库. 个人网址 ffffourwood.cn"
+}

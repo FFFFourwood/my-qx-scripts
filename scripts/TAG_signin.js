@@ -25,11 +25,11 @@ const myRequest = {
 $task.fetch(myRequest).then(response => {
     // response.statusCode, response.headers, response.body
     console.log(response.body.msg);
-    $notify("TAG签到提醒", response.body.msg, response.body); // Success!
+    $notify("TAG签到提醒", unescape(response.body.msg)); // Success!
     $done();
 }, reason => {
     // reason.error
-    $notify("TAG签到失败", response.body.msg, response.body.msg); // Error!
+    $notify("TAG签到失败", unescape(response.body.msg)); // Error!
     $done();
 });
 

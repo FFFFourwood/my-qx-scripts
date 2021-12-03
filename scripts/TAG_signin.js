@@ -25,8 +25,8 @@ const myRequest = {
 };
 $task.fetch(myRequest).then(response => {
     // response.statusCode, response.headers, response.body
-    let data = JSON.parse(response.body)
-    console.log(typeof(response.body));
+    let data = JSON.parse(JSON.stringify(response.body))
+    console.log(typeof(data));
     $notify("TAG签到提醒", "", data.msg); // Success!
     $done();
 }, reason => {

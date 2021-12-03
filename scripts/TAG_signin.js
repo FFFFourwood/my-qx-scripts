@@ -15,10 +15,6 @@ const headers = {
     "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36",
     "Content-Type": "application/json;charset=UTF-8"
 };
-
-function unicodeConverter(str) {
-    return unescape(str.replace(/\\u/gi, '%u'));
-}
 const myRequest = {
     url: url,
     method: method, // Optional, default GET.
@@ -27,23 +23,13 @@ const myRequest = {
 $task.fetch(myRequest).then(response => {
     // response.statusCode, response.headers, response.body
     let data = JSON.parse(response.body)
-    console.log(typeof(data) + ';;;;' + data);
+    console.log(data.msg);
     $notify("TAG签到提醒", "", data.msg); // Success!
     $done();
 }, reason => {
     // reason.error
-    $notify("TAG签到失败", "失败", reason.error); // Error!
+    $notify("TAG签到失败", "", reason.error); // Error!
     $done();
 });
-// $task.fetch(myRequest).then(response => {
-//     // response.statusCode, response.headers, response.body
-//     console.log(response.body.msg);
-//     let msg = unicodeConverter(response.body.msg)
-//     $notify("TAG签到提醒", "", msg); // Success!
-//     $done();
-// }, reason => {
-//     // reason.error
-//     $notify("TAG签到失败", "失败", reason.error); // Error!
-//     $done();
-// });
+
 

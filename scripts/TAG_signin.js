@@ -28,11 +28,11 @@ $task.fetch(myRequest).then(response => {
     // response.statusCode, response.headers, response.body
     console.log(response.body.msg);
     let msg = unicodeConverter(response.body.msg)
-    $notify("TAG签到提醒", msg, msg); // Success!
+    $notify("TAG签到提醒", "", msg); // Success!
     $done();
 }, reason => {
     // reason.error
-    $notify("TAG签到失败", msg, msg); // Error!
+    $notify("TAG签到失败", "失败", reason.error); // Error!
     $done();
 });
 

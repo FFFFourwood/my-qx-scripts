@@ -8,6 +8,10 @@
         {
             "config": "0 7 * * * https:\/\/raw.githubusercontent.com\/FFFFourwood\/my-qx-scripts\/main\/scripts\/hao4k_signin.js, img-url=https:\/\/raw.githubusercontent.com\/FFFFourwood\/my-qx-scripts\/main\/imgs\/logo_hao4k.png, tag=hao4K自动签到, enabled=true",
             "addons": ""
+        },
+        {
+            "config": "0 7 * * * https:\/\/raw.githubusercontent.com\/FFFFourwood\/my-qx-scripts\/main\/scripts\/TAG_signin.js, img-url=https:\/\/raw.githubusercontent.com\/crossutility\/Quantumult-X\/master\/quantumult-x.png, tag=TAG自动签到, enabled=true",
+            "addons": ""
         }
     ],
     "description": "FFFFourwood的QX脚本库. 个人网址 ffffourwood.cn"

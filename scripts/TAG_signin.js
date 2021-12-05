@@ -6,7 +6,7 @@
  */
 
 //替换你自己的cookie
-const cookie = "sidenav-state=pinned; uid=145503; email=li470598498%40live.com; key=bf74dfa4c5ec25dfee20e9f4237000370d048ab4816bb; ip=73875baecf822eb723cdd4a0e02fda9b; expire_in=1638592315"
+const cookie = "uid=145503; email=li470598498%40live.com; key=bf74dfa4c5ec25dfee20e9f4237000370d048ab4816bb; ip=80b94b22c4ad83c4f788fd9e13dd0831; expire_in=1638765080; sidenav-state=pinned"
 const url = "https://taggood-4.xyz/user/checkin";
 const method = "POST";
 const headers = {

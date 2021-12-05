@@ -22,9 +22,15 @@ const myRequest = {
 };
 $task.fetch(myRequest).then(response => {
     // response.statusCode, response.headers, response.body
-    let data = JSON.parse(response.body)
-    console.log(data.msg);
-    $notify("TAG签到提醒", "", data.msg); // Success!
+    let data = response.body
+    if (data.length < 250) {
+        data = JSON.parse(data)
+        console.log(data.msg);
+        $notify("TAG签到提醒", "", data.msg); // Success!
+    } else {
+        $notify("TAG签到失败", "", "请重新登录更换cookie"); // Error!
+    }
+
     $done();
 }, reason => {
     // reason.error

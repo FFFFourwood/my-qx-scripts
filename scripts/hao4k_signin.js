@@ -4,7 +4,7 @@
  *
  */
 
-const paramUrl = '?id=k_misign:sign&operation=qiandao&formhash=df87be5c&format=empty'//此处填写签到按钮的链接 从？开始
+const paramUrl = '?id=k_misign:sign&operation=qiandao&formhash=f0d6c6f2&format=empty'//此处填写签到按钮的链接 从？开始
 const hostUrl = 'https://www.hao4k.cn/plugin.php'
 const url = hostUrl + paramUrl
 const method = "GET";

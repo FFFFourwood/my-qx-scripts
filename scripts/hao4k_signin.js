@@ -3,7 +3,7 @@
  * and handle the response.
  *
  */
-const paramUrl = '?mod=sign&operation=qiandao&formhash=12e62493&format=empty'//此处填写签到按钮的链接 从？开始
+const paramUrl = '?mod=sign&operation=qiandao&formhash=d4908883&format=empty'//此处填写签到按钮的链接 从？开始
 const hostUrl = 'https://www.4ksj.com//qiandao/'
 const url = hostUrl + paramUrl
 const method = "GET";

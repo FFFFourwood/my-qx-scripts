@@ -3,14 +3,14 @@
  * and handle the response.
  *
  */
-const paramUrl = '?mod=sign&operation=qiandao&formhash=d4908883&format=empty'//此处填写签到按钮的链接 从？开始
-const hostUrl = 'https://www.4ksj.com//qiandao/'
+const paramUrl = '?sign=455e0479'
+const hostUrl = 'https://www.4ksj.com/qiandao.php'
 const url = hostUrl + paramUrl
 const method = "GET";
 //填写cookie信息
-const cookieInfo = 'HxHg_2132_saltkey=y8s4OiC8; HxHg_2132_lastvisit=1660089009; Hm_lvt_6e3c8a123748ffd4b2e81355600db0ac=1660092616; HxHg_2132_ulastactivity=2340TZQcRyuB5qKdbNKLghkqYhwem1iuc4d2ChxlTdFhJ5Pq2AEZ; HxHg_2132_auth=3c23d8EcV0KWkj6S7LOV%2BfBcVnNY0FXKLiwpmm5N%2FAEV%2BjW9zNWTm2bge7U13PU8GVc7Kk6ca3J9ukgdFOddNqAl95c; HxHg_2132_lastcheckfeed=163380%7C1660096645; HxHg_2132_curcountl=0; HxHg_2132_myrepeat_rr=R0; HxHg_2132_st_t=163380%7C1660096649%7Cc97d15a876825abfae1eb3ca46aa4ccc; HxHg_2132_forum_lastvisit=D_2_1660096649; Hm_lpvt_6e3c8a123748ffd4b2e81355600db0ac=1660111732; HxHg_2132_creditnotice=0D0D0D0D1D0D0D0D0D163380; HxHg_2132_creditbase=0D0D6D2D552D0D0D0D0; HxHg_2132_misigntime=1660111992; HxHg_2132_sid=p3SCAZ; HxHg_2132_lip=123.172.16.153%2C1660111993; HxHg_2132_lastact=1660111993%09home.php%09misc; HxHg_2132_sendmail=1'
+const cookieInfo = 'HxHg_2132_saltkey=neIzGmhM; HxHg_2132_lastvisit=1720268859; HxHg_2132_nofavfid=1; HxHg_2132_myrepeat_rr=R0; HxHg_2132_sid=0; Hm_lvt_6e3c8a123748ffd4b2e81355600db0ac=1721311507,1721389231,1721745863,1721829878; HMACCOUNT=C7E2D12D05E89252; HxHg_2132_auth=7c3eM59wdqhwA9r%2FGvjwG%2FiIsh%2ByU2Xqxkdbi2dxJbgYnlBPi35fVCZXGXOILqooGSzJDvz%2BzLw4Il6Za4NHzC7hKuk; HxHg_2132_lastcheckfeed=163380%7C1721829882; HxHg_2132_lip=103.188.234.172%2C1721829882; HxHg_2132_st_t=163380%7C1721829885%7Cb2563bb27c0a8fde977f1f8782d86f02; HxHg_2132_forum_lastvisit=D_52_1720537226D_57_1720542689D_190_1720542813D_58_1721389270D_2_1721829885; HxHg_2132_st_p=163380%7C1721829893%7C82fceca17ab12906a3f0525f03d95643; HxHg_2132_visitedfid=57D2D58D190D52; HxHg_2132_viewid=tid_87789; HxHg_2132_ulastactivity=1721830582%7C0; HxHg_2132_noticeTitle=1; HxHg_2132_home_diymode=1; HxHg_2132_sendmail=1; HxHg_2132_lastact=1721831009%09home.php%09spacecp; HxHg_2132_will_timelogout_163380=1721831009; HxHg_2132_checkpm=1; Hm_lpvt_6e3c8a123748ffd4b2e81355600db0ac=1721831009'
 const headers = {
-    'referer': 'https://www.4ksj.com/qiandao/',
+    'referer': 'https://www.4ksj.com/qiandao.php',
     'cookie': cookieInfo
 }
 const myRequest = {

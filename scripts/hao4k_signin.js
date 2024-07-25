@@ -23,9 +23,9 @@ $task.fetch(myRequest).then(response => {
     // response.statusCode, response.headers, response.body
     console.log(response.body);
     let tempRes = response.body
-    if (tempRes.indexOf('[CDATA[]]') != -1) {
+    if (tempRes.indexOf('打卡成功') != -1) {
         $notify("4k视界签到提醒", "签到成功", response.body); // Success!
-    } else if (tempRes.indexOf('今日已签') != -1) {
+    } else if (tempRes.indexOf('您今天已经打过卡了') != -1) {
         $notify("4k视界签到提醒", "今日已签", response.body); // Success!
     } else {
         $notify("4k视界签到失败", "请检查cookie以及参数", response.body); // Success! 
